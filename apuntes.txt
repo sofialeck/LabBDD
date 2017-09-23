@@ -1,0 +1,15 @@
+no es atomico por que no es solo un valor
+
+no atomico:
+telefono
+
+1|2313,
+1231343,
+2453,
+ya son 3 telefonos guardados 
+
+
+
+forma 1
+id-registros unicos, campos atomicos
+2-sin dependecias externas
