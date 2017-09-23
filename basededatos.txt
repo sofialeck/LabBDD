@@ -1,0 +1,44 @@
+USE Ruben;
+
+CREATE TABLE Autore(
+clave_autor int PRIMARY KEY, 
+nombre varchar(50),
+direccion varchar(100),
+URL varchar(45),
+);
+CREATE TABLE Editoree(
+clave_editor int PRIMARY KEY,
+nombre varchar(50),
+direccion varchar(50),
+telefono decimal(10,0),
+URL varchar(45),
+);
+
+CREATE TABLE Clientee(
+clave_cliente int PRIMARY KEY,
+email varchar(45),
+nombre varchar(50),
+direccion varchar(50),
+telefono decimal(10,0),
+);
+
+CREATE TABLE Almacenee(
+clave_almacen int PRIMARY KEY,
+direccion varchar(50),
+telefono decimal(10,0),
+);
+
+CREATE TABLE Libro(
+ISBN int PRIMARY KEY,
+titulo varchar(50),
+año DATE,
+precio decimal(10,2),
+clave_editor int FOREIGN KEY REFERENCES Editoree(clave_editor),
+clave_autor int FOREIGN KEY REFERENCES Autore(clave_autor),
+clave_almacen int FOREIGN KEY REFERENCES Almacenee(clave_almacen),
+);
+CREATE TABLE Carritoo(
+clave_carrito int PRIMARY KEY,
+clave_cliente int FOREIGN KEY REFERENCES Clientee(clave_cliente),
+fecha_compra DATE,
+);
