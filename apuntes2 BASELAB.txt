@@ -1,0 +1,24 @@
+insert into TipoTelefonos
+
+select NEWID(),  'casa' union 
+select NEWID(), 'oficina' union
+select NEWID(), ' trabjo' 
+
+
+
+
+(el ultimo no tiene union por que ya no se une con otro )
+
+
+update Telefonos set Descripcion= 'Telefonos corregido'
+
+whete Id=  '124855215435435434123'
+
+select * 
+--DELETE
+
+FROM telefonos
+where  id = '2556254665' 
+
+
+año-mes-dia  00:00:00:.000'
