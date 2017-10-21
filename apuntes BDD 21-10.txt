@@ -1,0 +1,73 @@
+estructura del select
+
+
+select 
+
+from
+join
+where
+group by
+having
+order by  (ordena de ascendente/descendente si no le pongo por default es ascendente
+
+
+
+
+
+
+select top , nombre de columna as , funcion 
+
+
+
+select
+
+from Inventario
+
+
+select iap.IdAlmacen, a.Nombre
+
+from Inventario as iap, Almacenes as a
+
+
+
+
+where iap.IdAlmacen 'D01223-123
+and a.Id=aiap.IdAlmacen
+
+
+
+
+select iap.IdAlmacen, a.Nombre, iap.Idproducto, p.Nombre--,  Sum(iap.Cantidad) as 'total de suma producida'
+
+from  
+
+
+
+
+
+having Sum(iap.Cantidad) <30
+
+
+
+
+
+
+
+select top 5*
+order by Count(iap.cantidad) ASC, p.nNOmbre Desc--, 
+
+
+
+
+
+1.-select con group by
+2.- 2 selects con almenos 1 columna (grupo agrupada)
+y 3 funciones agregadas
+
+3.-Igual a lo del paso 2 y poner where
+
+4.- igual al paso dos con having
+
+5.- select con TOP
+
+*y en algunas de las consultas poner "order by"
