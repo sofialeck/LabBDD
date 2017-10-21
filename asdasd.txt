@@ -121,6 +121,6 @@ TAREA
 checar
 
 https://technet.microsoft.com/es-es/library/ms189288(v=sql.90).aspx
-
+https://docs.microsoft.com/es-es/sql/t-sql/queries/select-having-transact-sql
 
 
