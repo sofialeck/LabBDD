@@ -1,0 +1,126 @@
+clase insert 2
+
+
+funciones 
+SUM
+AVG
+SD ---->desviacion estandar
+COUNT
+MAX
+MIN
+
+
+DATE DIFF
+GET DATE
+
+
+
+insert into tabla (condicion,otra,opcional) 
+values(algo,algo)
+select  ... , ...
+
+delete from tabla 
+where condiciones=algo 
+puede ser
+=
+!=
+and 
+or
+ot like '%e%'
+que no termine en e
+between x and y
+not In ( , , )
+is ull
+is not null
+
+
+update tabla set campo =valor, capo =otrov
+from sdaasd
+where
+
+shido
+	algo opcional solo los prim 3 o asi     *todas columnas, nombres donde puedes poner alias con as alias
+select (Top #) nombres columnas,otra
+from tabla()
+Joing on tabla1.columna. tabla2.otra
+where{}
+group by nombrecolumnas, otra 		
+agrupar en funciones aregadas como sumar todo
+having{}
+condiciones logicas como where pero con columnas agregadas
+orderby columna,aosjkbb
+para ordenar como grupo,apellidoa-z,matricula
+
+
+
+
+
+
+esto te da info comprimida 
+
+
+
+
+select * from cartelera as cart
+
+select cart.id_cartelera,cart.fecha,a.nombre
+from cartelera as cart, sucursal as a
+where id_cartelera = '234382934727893427784239'
+and a.id_sucursal = cart-id_sucusal
+
+
+si comentas el and te da todas las posibilidades de juntar la t1 con t2
+cross join con and
+
+join es juntar columnas haciendo que sean iguales ciertos campos
+
+
+
+select * from cartelera as cart
+
+select cart.id_cartelera,cart.fecha,a.nombre
+from cartelera as cart
+join sucursal as a on a.id = cart.id_sucursal
+join productos as p on p_id = cart.id_producto
+
+
+
+select a.nombre, SUM(iap.Cantidad) as 'Total suma', COUNT(iap.Cantidad) as 'cantidad de tablas'
+from Inventario as iap
+join Almacenes as a on a.Id=iap.idAlmacen
+group by a.Nombre
+and a.id_sucursal = cart-id_sucusal
+
+nombre de columnas iguales total de productos de columnas y tablas diferentes
+
+	(en este top seleccionas solo 3 desde el inicio)
+select top 3 a.nombre, SUM(iap.Cantidad) as 'Total suma', COUNT(iap.Cantidad) as 'cantidad de tablas'
+
+
+from Inventario as iap
+join Almacenes as a on a.Id=iap.idAlmacen
+group by a.Nombre
+and a.id_sucursal = cart-id_sucusal
+having SUM(iap.Cantidad) > 20
+te filtra mas a los que cumplan esa condicion porque es una columna calculada
+--order by Nombre desc
+order by SUM(iap.Cantidad) desc
+ordenar por nombre o por columna que quieras
+
+
+
+TAREA
+1.- select con group by
+2.- 2 select con almenos 1 columna y 3 funcion agregadas
+3.- Igual a 2.- pero con where
+4.- Igual a 2.- pero con having
+5.- Select con TOP * al menos 1 de las consultas con order by
+
+
+
+checar
+
+https://technet.microsoft.com/es-es/library/ms189288(v=sql.90).aspx
+
+
+
