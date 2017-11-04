@@ -1,0 +1,43 @@
+create function fnSuma(@v1 int, @v2 int)
+returns int 
+as 
+beggin
+Return @v1 + @v2
+end
+
+select dbo.fnSuma (9,14)
+
+
+
+create trgigger tr_insert 
+on InventarioalmacenProducts
+after update --delete/*instead*/
+as begin
+select* 
+from InSERTED (guarda valores donde se van a insertar
+select * 
+from deleted (valores que se van a perder)
+end
+
+
+(los trigger solo se le pueden agregar algoo "insert" modificar "update" o delete)
+
+
+
+for(int i= 0, i < b, i ++)
+
+
+
+update set 
+
+
+practica final
+5 Sp 
+1 por cada reporte de la practica anterior { create  y exec
+
+
+crear una fuction y usarla
+
+
+
+2 triggers ´{ after y instead 
