@@ -1,0 +1,7 @@
+http://www.aulaclic.es/sqlserver/t_9_8.htm
+
+
+http://www.devjoker.com/contenidos/articulos/278/Triggers-en-Transact-SQL.aspx
+
+
+
